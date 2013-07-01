@@ -1,0 +1,41 @@
+V0.0.1.0
+
+- primeiros teste de detecção de pendriver.
+- correção de erro de detecção de HD externo.
+
+v0.0.9.0
+
+- separado o verificado do monitor de USB.
+- otimizado a varredura do sistema.
+- enchugada no codigo fonte.
+- trocado barra de percentual por o ToolTip().
+- adicionado a ultima versão sqlite3.dll.
+- corrigidos alguns bug.
+
+
+v0.1.0.0
+
+- verifica automaticamente o update (AdlibRegister) tempo padrão é de 3600000ms = 1 hora.
+- colocação da unidade do ToolTip().
+- adicionado o arquivo de configuração config.ini.
+
+v0.1.0.1
+
+- Alterado ToolTip() por SplashTextOn()
+
+v0.2.0.0
+
+- Detecção de arquivos via analize de expressão.
+- otimização do banco de dados.
+- correção do instalador.
+- correção do desinstalador.
+- algumas melhoria no codigo fonte.
+
+v0.3.0.0
+
+- Adicionada a barra de progresso.
+- adicionado o smart caner (otimiza o escaneamento).
+- adicionado o smart max bit.
+- otimização do codigo fonte do verifica.exe.
+- adicionado a possibilidade usar arquivo config.ini altera parametros.
+- opção de verifica hd externo
