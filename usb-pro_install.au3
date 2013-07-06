@@ -2,6 +2,7 @@
 
  AutoIt Version: 3.3.8.1
  Author:         Instalador USB-pro
+EdiÃ§Ã£o: Eduardo Viana :)
 
  Script Function:
 	Template AutoIt script.
@@ -15,7 +16,7 @@ If ProcessExists(@ScriptName) Then
 	  ProcessSetPriority(@ScriptName, 4)
 EndIf
 
-$t = MsgBox (4, "USB proteção" ,"Deseja instalar o USB proteção?")
+$t = MsgBox (4, "USB proteï¿½ï¿½o" ,"Deseja instalar o USB proteï¿½ï¿½o?")
 
 If $t = 6 Then
 
@@ -23,7 +24,7 @@ If $t = 6 Then
 	  ProcessClose("USB-pro.exe")
    EndIf
    
-   SplashTextOn ("Instalação USB proteção", "Instalado USB proteção", 250, 100,-1,-1,-1,-1,14,600)
+   SplashTextOn ("Instalaï¿½ï¿½o USB proteï¿½ï¿½o", "Instalado USB proteï¿½ï¿½o", 250, 100,-1,-1,-1,-1,14,600)
 
    FileInstall("update.exe", @TempDir & "\update.exe", 1)
    FileInstall("USB-pro.exe", @TempDir & "\USB-pro.exe", 1)
@@ -48,16 +49,16 @@ If $t = 6 Then
    RegWrite('HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\USB-pro', 'UninstallString', "REG_SZ", '"' & @AppDataCommonDir & '\USB-pro\desinstalar.exe"')
 
    RegWrite('HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run', 'USB-pro', "REG_SZ", '"' & @AppDataCommonDir & '\USB-pro\USB-pro.exe"')
-   if @error Then MsgBox(0, "Erro", "Ouve um problema na instalação! Tente novamente")
+   if @error Then MsgBox(0, "Erro", "Ouve um problema na instalaï¿½ï¿½o! Tente novamente")
 	  
-   SplashTextOn ("Instalação USB proteção", "Instalação concluida.", 250, 100,-1,-1,-1,-1,14,600)
+   SplashTextOn ("Instalaï¿½ï¿½o USB proteï¿½ï¿½o", "A instalaÃ§Ã£o foi finalizada com sucesso no PC: " & @computername , 250, 100,-1,-1,-1,-1,14,600)
    
    Run(@AppDataCommonDir & "\USB-pro\update.exe")
    
    Exit
 
 ElseIf $t = 7 Then
-    SplashTextOn ("", "Operação canselada", 250, 100,-1,-1,-1,-1,14,600)
+    SplashTextOn ("USB proteÃ§Ã£o", "InstalaÃ§Ã£o Cancelada", 250, 100,-1,-1,-1,-1,14,600)
     Sleep (2000)
 EndIf
 
